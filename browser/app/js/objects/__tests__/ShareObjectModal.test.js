@@ -114,14 +114,14 @@ describe("ShareObjectModal", () => {
       )
       wrapper.setState({
         expiry: {
-          days: 7,
+          days: 365,
           hours: 0,
           minutes: 0
         }
       })
       wrapper.find("#increase-hours").simulate("click")
       expect(wrapper.state("expiry")).toEqual({
-        days: 7,
+        days: 365,
         hours: 0,
         minutes: 0
       })
@@ -180,7 +180,7 @@ describe("ShareObjectModal", () => {
       })
       wrapper.find("#increase-days").simulate("click")
       expect(wrapper.state("expiry")).toEqual({
-        days: 7,
+        days: 365,
         hours: 0,
         minutes: 0
       })
@@ -201,11 +201,11 @@ describe("ShareObjectModal", () => {
       })
       wrapper.find("#decrease-hours").simulate("click")
       expect(wrapper.state("expiry")).toEqual({
-        days: 7,
+        days: 365,
         hours: 0,
         minutes: 0
       })
-      expect(shareObject).toHaveBeenCalledWith("obj1", 7, 0, 0)
+      expect(shareObject).toHaveBeenCalledWith("obj1", 365, 0, 0)
     })
   })
 })

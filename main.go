@@ -26,11 +26,13 @@ package main // import "github.com/minio/minio"
 
 import (
 	"os"
-
-	minio "github.com/minio/minio/cmd"
-
+	minio "minio/cmd"
 	// Import gateway
-	_ "github.com/minio/minio/cmd/gateway"
+	_ "minio/cmd/gateway"
+	//"os"
+	//minio "github.com/minio/minio/cmd"
+	//// Import gateway
+	//_ "github.com/minio/minio/cmd/gateway"
 )
 
 func main() {
