@@ -1,9 +1,5 @@
 
-
-
-//module github.com/minio/minio
-
-module minio
+module github.com/minio/minio
 
 go 1.14
 
@@ -96,3 +92,7 @@ require (
 	gopkg.in/olivere/elastic.v5 v5.0.86
 	gopkg.in/yaml.v2 v2.3.0
 )
+
+replace github.com/minio/minio/cmd => /home/james/code/go/minio/cmd
+
+replace github.com/minio/minio/cmd/gateway => /home/james/code/go/minio/cmd/gateway
